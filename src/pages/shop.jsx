@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { useProducts } from "../context/productprovider";
-import { useCart } from "../context/cartProvider";
 import toast from "react-hot-toast";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,11 +8,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function ShopPage() {
-  const { addToCart } = useCart();
   const { products } = useProducts();
   const { categorySlug } = useParams();
 
-  const categories = ["All", "HOMES", "OFFICES", "LOUNGES", "SPA'S", "EVENTS"];
+  const categories = ["All", "BEDSPREAD", "DUVETS", "PILLOWS", "CURTAINS", "THROWS","ACCESSORIES"];
   const [filter, setFilter] = useState("All");
 
   const containerRef = useRef(null);
@@ -98,16 +96,6 @@ export default function ShopPage() {
 
               <div className="absolute bottom-0 left-0 p-4 bg-white/40 text-black space-y-2 rounded-md">
                 <h2 className="font-semibold">{p.name}</h2>
-                <p className="text-lg font-bold">${p.price}</p>
-                <button
-                  onClick={() => {
-                    addToCart(p);
-                    toast.success(`${p.name} added to cart`);
-                  }}
-                  className="mt-2 bg-stone-800 text-white p-2 rounded"
-                >
-                  Add to cart
-                </button>
               </div>
             </div>
           </div>

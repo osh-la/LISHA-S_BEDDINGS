@@ -1,51 +1,37 @@
 [
   {
     "id": 1,
-    "name": "Blue single sitter",
-    "category": "HOMES",
-    "image": "/images/productimage/bluecouch.png",
+    "name": "American cotton",
+    "category": "DUVETS",
+    "image": "/images/productimage/americancotton.png",
     "price": 1020
   },
   {
     "id": 2,
-    "name": "single office chair",
-    "category": "OFFICES",
-    "image": "/images/productimage/singlecouch.png",
+    "name": "Egyptian cotton",
+    "category": "DUVETS",
+    "image": "/images/productimage/egyptiancotton.png",
     "price": 320
   },
   {
     "id": 3,
-    "name": "layback comfy chair",
-    "category": "LOUNGES",
-    "image": "/images/productimage/layback.png",
+    "name": "Polish silk",
+    "category": "DUVETS",
+    "image": "/images/productimage/polishsilk1.png",
     "price": 900
   },
     {
     "id": 4,
-    "name": "wall deco",
-    "category": "SPA'S",
-    "image": "/images/productimage/walldeco.png",
+    "name": "stripfur",
+    "category": "BEDSPREAD",
+    "image": "/images/productimage/stripfur.png",
     "price": 640
   },
     {
     "id": 5,
-    "name": "conference chairs",
-    "category": "EVENTS",
-    "image": "/images/productimage/diningchair.png",
+    "name": "strip",
+    "category": "BEDSPREAD",
+    "image": "/images/productimage/strip.png",
     "price": 440
-  },
-  {
-    "id": 6,
-    "name": "conference chairs",
-    "category": "HOMES",
-    "image": "/images/productimage/wallshelf.png",
-    "price": 840
-  },
-  {
-    "id": 7,
-    "name": "center table",
-    "category": "OFFICES",
-    "image": "/images/productimage/table.png",
-    "price": 340
   }
 ]

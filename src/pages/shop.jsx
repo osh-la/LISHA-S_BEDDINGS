@@ -66,7 +66,7 @@ export default function ShopPage() {
   }, [filtered]);
 
   return (
-    <div ref={containerRef} className="px-4 py-12 space-y-8 bg-red-50">
+    <div ref={containerRef} className="px-4 py-12 space-y-8 bg-[#f4f0e9]">
       <h1 className="text-4xl font-bold">All Products</h1>
 
       <div className="flex flex-wrap gap-4">

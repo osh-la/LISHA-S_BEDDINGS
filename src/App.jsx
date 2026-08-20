@@ -1,4 +1,3 @@
-
 import "./App.css";
 import {
   Route,
@@ -14,13 +13,9 @@ import MainLayout from "./Layout/mainLayout";
 import About from "./pages/About";
 import NotFound from "./pages/notFound";
 import ShopPage from "./pages/shop";
-import Cart from "./pages/cartPage";
-
-import { CartProvider } from "./context/cartProvider";
 import { TransitionProvider } from "./context/transitionContext";
 
 import { SectionRefsProvider, useSectionRefs } from "./context/sectionRefs";
-
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -64,10 +59,21 @@ function AnimationsController() {
           }
           // read the current scroll position from Lenis
           // lenis has internal API 'scroll' on recent versions; fallback to window
-          return (lenis && lenis.scroll && lenis.scroll.instance && lenis.scroll.instance.scroll?.y) || window.scrollY;
+          return (
+            (lenis &&
+              lenis.scroll &&
+              lenis.scroll.instance &&
+              lenis.scroll.instance.scroll?.y) ||
+            window.scrollY
+          );
         },
         getBoundingClientRect() {
-          return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+          return {
+            top: 0,
+            left: 0,
+            width: window.innerWidth,
+            height: window.innerHeight,
+          };
         },
         pinType: document.body.style.transform ? "transform" : "fixed",
       });
@@ -80,7 +86,10 @@ function AnimationsController() {
     lenis.on("scroll", ScrollTrigger.update);
 
     // refresh ScrollTrigger -> update Lenis
-    ScrollTrigger.addEventListener("refresh", () => lenis && lenis.update && lenis.update());
+    ScrollTrigger.addEventListener(
+      "refresh",
+      () => lenis && lenis.update && lenis.update(),
+    );
 
     // --- GSAP animations in single context ---
     const ctx = gsap.context(() => {
@@ -89,7 +98,7 @@ function AnimationsController() {
         gsap.fromTo(
           heroHeader.current,
           { opacity: 0 },
-          { opacity: 1, duration: 1.8, ease: "power2.out" }
+          { opacity: 1, duration: 1.8, ease: "power2.out" },
         );
       }
 
@@ -106,7 +115,7 @@ function AnimationsController() {
               end: "bottom top",
               scrub: true,
             },
-          }
+          },
         );
       }
 
@@ -124,7 +133,7 @@ function AnimationsController() {
               scrub: true,
               // snap: 1, // optional: keep snap if desired
             },
-          }
+          },
         );
       }
 
@@ -145,7 +154,9 @@ function AnimationsController() {
       // CATEGORIES: horizontal scroll with pinned container and background parallax per slide
       if (categoriesContainer?.current) {
         const container = categoriesContainer.current;
-        const slides = Array.from(container.querySelectorAll(".category-slide"));
+        const slides = Array.from(
+          container.querySelectorAll(".category-slide"),
+        );
 
         if (slides.length > 0) {
           const scrollTween = gsap.to(slides, {
@@ -162,7 +173,7 @@ function AnimationsController() {
               id: "category-scroll",
             },
           });
-//categories scroll
+          //categories scroll
           slides.forEach((slide, i) => {
             const bg = slide.querySelector(".glide-bg");
             if (!bg) return;
@@ -180,7 +191,7 @@ function AnimationsController() {
                   scrub: 0.3,
                   id: `slide-${i}`,
                 },
-              }
+              },
             );
           });
         }
@@ -201,8 +212,15 @@ function AnimationsController() {
       }
 
       // LOOKOUT: pinned timeline showing text then image
-      if (lookoutSection?.current && lookoutText?.current && lookoutImage?.current) {
-        gsap.set([lookoutText.current, lookoutImage.current], { yPercent: 100, opacity: 0 });
+      if (
+        lookoutSection?.current &&
+        lookoutText?.current &&
+        lookoutImage?.current
+      ) {
+        gsap.set([lookoutText.current, lookoutImage.current], {
+          yPercent: 100,
+          opacity: 0,
+        });
 
         const tl = gsap.timeline({
           scrollTrigger: {
@@ -228,7 +246,7 @@ function AnimationsController() {
             duration: 0.5,
             ease: "power2.out",
           },
-          "<0.15"
+          "<0.15",
         );
       }
     }); // end ctx
@@ -244,7 +262,10 @@ function AnimationsController() {
         /* ignore */
       }
       ScrollTrigger.getAll().forEach((t) => t.kill());
-      ScrollTrigger.removeEventListener("refresh", () => lenis && lenis.update && lenis.update());
+      ScrollTrigger.removeEventListener(
+        "refresh",
+        () => lenis && lenis.update && lenis.update(),
+      );
       lenis.destroy();
       cancelAnimationFrame(rafId);
     };
@@ -275,24 +296,21 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="/shop" element={<ShopPage />} />
-        <Route path="/cart" element={<Cart />} />
         <Route path="/shop/:categorySlug" element={<ShopPage />} />
         <Route path="*" element={<NotFound />} />
-      </Route>
-    )
+      </Route>,
+    ),
   );
 
   return (
     <>
       <TransitionProvider>
         <Toaster position="bottom-right" reverseOrder={false} />
-        <CartProvider>
-          <SectionRefsProvider>
-            <RouterProvider router={router} />
-            {/* AnimationsController must be inside SectionRefsProvider so it can consume refs */}
-            <AnimationsController />
-          </SectionRefsProvider>
-        </CartProvider>
+
+        <SectionRefsProvider>
+          <RouterProvider router={router} />
+          <AnimationsController />
+        </SectionRefsProvider>
       </TransitionProvider>
     </>
   );

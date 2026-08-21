@@ -54,10 +54,9 @@ export default function Footer() {
               </p>
 
               <div className="flex flex-col gap-3 text-sm">
-                <a href="/shop">Shop</a>
                 <a href="/collections">Collections</a>
-                <a href="/about">About Us</a>
-                <a href="/contact">Contact</a>
+                <a href="/">About Us</a>
+                <a href="/">Contact</a>
               </div>
             </div>
 
@@ -67,10 +66,10 @@ export default function Footer() {
               </p>
 
               <div className="flex flex-col gap-3 text-sm">
-                <a href="/hospitality">Hospitality</a>
-                <a href="/wholesale">Wholesale</a>
-                <a href="/custom-orders">Custom Orders</a>
-                <a href="/size-guide">Size Guide</a>
+                <a href="/">Hospitality</a>
+                <a href="/">Wholesale</a>
+                <a href="/">Custom Orders</a>
+                <a href="/">Size Guide</a>
               </div>
             </div>
 

@@ -12,7 +12,7 @@ import Home from "./pages/Home";
 import MainLayout from "./Layout/mainLayout";
 import About from "./pages/About";
 import NotFound from "./pages/notFound";
-import ShopPage from "./pages/shop";
+
 import { TransitionProvider } from "./context/transitionContext";
 
 import { SectionRefsProvider, useSectionRefs } from "./context/sectionRefs";
@@ -20,6 +20,7 @@ import { SectionRefsProvider, useSectionRefs } from "./context/sectionRefs";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
+import Collection from "./pages/collections";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -295,8 +296,8 @@ export default function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="/shop" element={<ShopPage />} />
-        <Route path="/shop/:categorySlug" element={<ShopPage />} />
+        <Route path="/collections" element={<Collection />} />
+        <Route path="/collections/:categorySlug" element={<Collection />} />
         <Route path="*" element={<NotFound />} />
       </Route>,
     ),

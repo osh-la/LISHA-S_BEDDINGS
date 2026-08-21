@@ -26,7 +26,7 @@ const categories = [
   },
   {
     title: "BEDTOPPERS",
-    slug: "bedtoppers",
+    slug: "accessories",
     image: "/images/bedtopper2.jpeg",
   },
   {
@@ -41,7 +41,7 @@ const categories = [
   },
 ];
 
-const LookoutSection = () => {
+const CatSection = () => {
   const { lookoutSection, lookoutText, lookoutImage } = useSectionRefs();
 
   const imageRefs = useRef([]);
@@ -119,7 +119,7 @@ const LookoutSection = () => {
         {categories.map((category, index) => (
           <Link
             key={category.title}
-            to={`/shop/${category.slug}`}
+            to={`/collections/${category.slug}`}
             ref={index === 0 ? lookoutImage : null}
             className="group relative block aspect-[4/3] overflow-hidden"
           >
@@ -155,4 +155,4 @@ const LookoutSection = () => {
   );
 };
 
-export default LookoutSection;
+export default CatSection;

@@ -10,7 +10,7 @@ const Nav = ({ onCartClick }) => {
 
         <div className="flex gap-4">
           <span className="cursor-pointer hover:underline">
-            <TransitionLink to="/shop">EXPLORE</TransitionLink>
+            <TransitionLink to="/collections">EXPLORE</TransitionLink>
           </span>
         </div>
       </div>

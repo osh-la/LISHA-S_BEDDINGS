@@ -51,7 +51,7 @@ export default function Hero() {
                 every room.
               </p>
 
-              <TransitionLink to="/shop">
+              <TransitionLink to="/collections">
                 <button className="group flex items-center gap-5 border border-white/70 rounded-full px-6 py-3 text-[10px] uppercase tracking-[0.25em] transition-all duration-500 hover:bg-white hover:text-black">
                   <span>Explore Collection</span>
 

@@ -91,12 +91,12 @@ export default function BrandIntro() {
             </p>
           </div>
 
-          <a
+          {/* <a
             href="/about"
             className="inline-flex mt-10 border-b border-black pb-2 text-xs tracking-[0.25em] uppercase"
           >
             Discover Lisha's Line
-          </a>
+          </a> */}
 
         </div>
       </div>

@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "name": "American cotton",
+    "name": "DUVET",
     "category": "DUVETS",
-    "image": "/images/productimage/americancotton.png",
+    "image": "/images/productsimage/duvet.png",
     "price": 1020
   },
   {
     "id": 2,
-    "name": "Egyptian cotton",
+    "name": "DUVET",
     "category": "DUVETS",
-    "image": "/images/productimage/egyptiancotton.png",
+    "image": "/images/productsimage/duvet1.png",
     "price": 320
   },
   {

@@ -25,9 +25,9 @@ const categories = [
     image: "/images/pillows.jfif",
   },
   {
-    title: "CURTAINS",
-    slug: "curtains",
-    image: "/images/curtains.jfif",
+    title: "BEDTOPPERS",
+    slug: "bedtoppers",
+    image: "/images/productsimage/bedtopper2.jpeg",
   },
   {
     title: "THROWS",

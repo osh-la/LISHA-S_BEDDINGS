@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Background */}
       <img
         ref={videoRef}
-        src="/images/hero.jpeg"
+        src="/images/hero.jpg"
         alt="Luxury bedding"
         className="absolute inset-0 z-[-2] h-full w-full object-cover object-center"
       />

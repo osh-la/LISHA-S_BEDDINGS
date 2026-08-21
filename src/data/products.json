@@ -20,15 +20,9 @@
     "image": "/images/productimage/polishsilk1.png",
     "price": 900
   },
+   
     {
     "id": 4,
-    "name": "stripfur",
-    "category": "BEDSPREAD",
-    "image": "/images/productimage/stripfur.png",
-    "price": 640
-  },
-    {
-    "id": 5,
     "name": "strip",
     "category": "BEDSPREAD",
     "image": "/images/productimage/strip.png",

@@ -15,17 +15,79 @@
   },
   {
     "id": 3,
+    "name": "AMERICAN COTTON",
+    "category": "BEDSPREAD",
+    "image": "/images/productsimage/bedspread/americancotton.png",
+    "price": 1020
+  },
+  {
+    "id": 4,
+    "name": "AMERICAN COTTON",
+    "category": "BEDSPREAD",
+    "image": "/images/productsimage/bedspread/americancotton1.png",
+    "price": 1020
+  },
+  {
+    "id": 5,
+    "name": "AMERICAN COTTON",
+    "category": "BEDSPREAD",
+    "image": "/images/productsimage/bedspread/americancotton2.png",
+    "price": 1020
+  },
+  {
+    "id": 6,
+    "name": "EGYPTIAN COTTON",
+    "category": "BEDSPREAD",
+    "image": "/images/productsimage/bedspread/egyptiancotton.png",
+    "price": 1020
+  },
+   {
+    "id": 7,
+    "name": "EGYPTIAN COTTON",
+    "category": "BEDSPREAD",
+    "image": "/images/productsimage/bedspread/egyptiancotton1.png",
+    "price": 1020
+  },
+   {
+    "id": 8,
+    "name": "EGYPTIAN COTTON",
+    "category": "BEDSPREAD",
+    "image": "/images/productsimage/bedspread/egyptiancotton2.png",
+    "price": 1020
+  },
+    {
+    "id": 9,
+    "name": "POLISH SILK",
+    "category": "BEDSPREAD",
+    "image": "/images/productsimage/bedspread/polishsilk.png",
+    "price": 1020
+  },
+   {
+    "id": 10,
+    "name": "POLISH SILK",
+    "category": "BEDSPREAD",
+    "image": "/images/productsimage/bedspread/polishsilk1.png",
+    "price": 1020
+  },
+   {
+    "id": 11,
+    "name": "POLISH SILK",
+    "category": "BEDSPREAD",
+    "image": "/images/productsimage/bedspread/polishsilk2.png",
+    "price": 1020
+  },
+  {
+    "id": 2,
+    "name": "DUVET",
+    "category": "DUVETS",
+    "image": "/images/productsimage/duvet1.png",
+    "price": 320
+  },
+  {
+    "id": 3,
     "name": "Polish silk",
     "category": "DUVETS",
     "image": "/images/productimage/polishsilk1.png",
     "price": 900
-  },
-   
-    {
-    "id": 4,
-    "name": "strip",
-    "category": "BEDSPREAD",
-    "image": "/images/productimage/strip.png",
-    "price": 440
   }
 ]

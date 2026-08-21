@@ -1,16 +1,16 @@
 [
   {
     "id": 1,
-    "name": "DUVET",
+    "name": "DUVETS",
     "category": "DUVETS",
-    "image": "/images/productsimage/duvet.png",
+    "image": "/images/productsimage/duvet/duvet.png",
     "price": 1020
   },
   {
     "id": 2,
-    "name": "DUVET",
+    "name": "DUVETS",
     "category": "DUVETS",
-    "image": "/images/productsimage/duvet1.png",
+    "image": "/images/productsimage/duvet/duvet1.png",
     "price": 320
   },
   {
@@ -75,19 +75,70 @@
     "category": "BEDSPREAD",
     "image": "/images/productsimage/bedspread/polishsilk2.png",
     "price": 1020
+  }, 
+   {
+    "id": 12,
+    "name": "BED COVERS",
+    "category": "ACCESSORIES",
+    "image": "/images/productsimage/accessories/bedcover.png",
+    "price": 1020
   },
   {
-    "id": 2,
-    "name": "DUVET",
-    "category": "DUVETS",
-    "image": "/images/productsimage/duvet1.png",
-    "price": 320
+    "id": 13,
+    "name": "FUNNEL BLANKETS",
+    "category": "ACCESSORIES",
+    "image": "/images/productsimage/accessories/funnelblanket.png",
+    "price": 1020
+  },
+   {
+    "id": 14,
+    "name": "FUNNEL BLANKETS",
+    "category": "ACCESSORIES",
+    "image": "/images/productsimage/accessories/funnelblanket1.png",
+    "price": 1020
+  },
+   {
+    "id": 15,
+    "name": "FUNNEL BLANKETS",
+    "category": "ACCESSORIES",
+    "image": "/images/productsimage/accessories/funnelblanket2.png",
+    "price": 1020
+  },
+   {
+    "id": 16,
+    "name": "ROBES",
+    "category": "ACCESSORIES",
+    "image": "/images/productsimage/accessories/robe.png",
+    "price": 1020
+  },
+   {
+    "id": 17,
+    "name": "THROW PILLOW",
+    "category": "ACCESSORIES",
+    "image": "/images/productsimage/accessories/throwpillow.png",
+    "price": 1020
   },
   {
-    "id": 3,
-    "name": "Polish silk",
-    "category": "DUVETS",
-    "image": "/images/productimage/polishsilk1.png",
-    "price": 900
+    "id": 18,
+    "name": "TOWELS",
+    "category": "ACCESSORIES",
+    "image": "/images/productsimage/accessories/towel.png",
+    "price": 1020
+  },
+  {
+    "id": 18,
+    "name": "PILLOWS",
+    "category": "PILLOWS",
+    "image": "/images/productsimage/pillows/pillow.png",
+    "price": 1020
+  },
+  {
+    "id": 18,
+    "name": "PILLOWS",
+    "category": "PILLOWS",
+    "image": "/images/productsimage/pillows/pillow1.png",
+    "price": 1020
   }
+ 
+ 
 ]

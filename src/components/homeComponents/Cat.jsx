@@ -27,7 +27,7 @@ const categories = [
   {
     title: "BEDTOPPERS",
     slug: "bedtoppers",
-    image: "/images/productsimage/bedtopper2.jpeg",
+    image: "/images/bedtopper2.jpeg",
   },
   {
     title: "THROWS",
@@ -89,7 +89,7 @@ const LookoutSection = () => {
   return (
     <section
       ref={lookoutSection}
-      className="relative w-full overflow-hidden bg-red-50 px-6 py-20 md:px-16 md:py-28 lg:px-24"
+      className="relative w-full overflow-hidden bg-[#f4f0e9] px-6 py-20 md:px-16 md:py-28 lg:px-24"
     >
       {/* Header */}
       <div

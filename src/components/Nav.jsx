@@ -5,7 +5,13 @@ const Nav = ({ onCartClick }) => {
     <nav className="fixed top-0 w-full z-50 bg-[#f4f0e9] shadow-sm text-gray-800 text-base sm:text-xl px-4 sm:px-8 py-4">
       <div className="flex items-center justify-between">
         <div className="font-bold">
-          <TransitionLink to="/">LOGO</TransitionLink>
+          <TransitionLink to="/">
+         <img
+  src="/images/logo.png"
+  alt="logo"
+  className="h-9 w-auto object-contain opacity-90 transition-opacity duration-300 hover:opacity-100"
+/>
+          </TransitionLink>
         </div>
 
         <div className="flex gap-4">

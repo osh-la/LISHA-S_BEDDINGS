@@ -11,7 +11,7 @@ export default function ShopPage() {
   const { products } = useProducts();
   const { categorySlug } = useParams();
 
-  const categories = ["All", "BEDSPREAD", "DUVETS", "PILLOWS", "CURTAINS", "THROWS","ACCESSORIES"];
+  const categories = ["All","ACCESSORIES", "BEDSPREAD", "DUVETS", "PILLOWS", "CURTAINS", "THROWS"];
   const [filter, setFilter] = useState("All");
 
   const containerRef = useRef(null);

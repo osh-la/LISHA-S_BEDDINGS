@@ -159,7 +159,36 @@
     "category": "PILLOWS",
     "image": "/images/productsimage/pillows/pillow1.png",
     "price": 1020
+  },
+   {
+    "id": 24,
+    "name": "CURTAINS",
+    "category": "CURTAINS",
+    "image": "/images/productsimage/curtains/curtain1.jpeg",
+    "price": 1020
+  },
+   {
+    "id": 25,
+    "name": "CURTAINS",
+    "category": "CURTAINS",
+    "image": "/images/productsimage/curtains/curtain2.jpeg",
+    "price": 1020
+  },
+   {
+    "id": 26,
+    "name": "CURTAINS",
+    "category": "CURTAINS",
+    "image": "/images/productsimage/curtains/curtain3.jpeg",
+    "price": 1020
+  },
+   {
+    "id": 27,
+    "name": "CURTAINS",
+    "category": "CURTAINS",
+    "image": "/images/productsimage/curtains/curtain4.jpeg",
+    "price": 1020
   }
+ 
  
  
 ]

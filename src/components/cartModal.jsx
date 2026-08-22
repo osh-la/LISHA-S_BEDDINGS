@@ -11,12 +11,12 @@ const CartModal = ({ onClose }) => {
   const handleProceed = () => {
     if (cart.length === 0) return;
 
-    const phoneNumber = "234XXXXXXXXXX"; // Replace with your WhatsApp number
+    const phoneNumber = "2348165456784"; 
 
     const items = cart
       .map(
         (item, index) =>
-          `${index + 1}. ${item.name} - ₦${Number(item.price).toLocaleString()}`
+          `${index + 1}. ${item.name}`
       )
       .join("\n");
 
@@ -26,7 +26,6 @@ I would like to place an order for the following items:
 
 ${items}
 
-Total: ₦${total.toLocaleString()}
 
 Please let me know the next steps for payment and delivery.
 
@@ -104,7 +103,7 @@ Thank you.`;
 
             <button
               onClick={handleProceed}
-              className="w-full bg-red-800 text-white py-3 rounded-md hover:bg-red-500 transition"
+              className="w-full bg-gray-800 text-white py-3 rounded-md hover:bg-gray-500 transition"
             >
               Proceed To Order
             </button>

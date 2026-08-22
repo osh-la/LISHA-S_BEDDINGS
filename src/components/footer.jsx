@@ -66,10 +66,10 @@ export default function Footer() {
               </p>
 
               <div className="flex flex-col gap-3 text-sm">
-                <a href="/">Hospitality</a>
-                <a href="/">Wholesale</a>
-                <a href="/">Custom Orders</a>
-                <a href="/">Size Guide</a>
+                <a >Hospitality</a>
+                <a >Wholesale</a>
+                <a href="https://wa.me/message/KOGCFGXMV3GDD1">Custom Orders</a>
+                <a href="https://wa.me/message/KOGCFGXMV3GDD1">Size Guide</a>
               </div>
             </div>
 
@@ -79,8 +79,8 @@ export default function Footer() {
               </p>
 
               <div className="flex flex-col gap-3 text-sm">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
+                <a href="https://www.instagram.com/lishas_beddings?igsi=ZjRwM2dxdG15cm91&utm_source=qr">Instagram</a>
+                <a href="https://wa.me/message/KOGCFGXMV3GDD1">Whatsapp</a>
                 <a href="#">TikTok</a>
               </div>
             </div>

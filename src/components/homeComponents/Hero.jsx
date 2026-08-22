@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="max-w-5xl">
 
             <p className="mb-5 text-[10px] md:text-xs uppercase tracking-[0.4em] text-white/80">
-              Timeless Comfort
+              LISHA'S LINE
             </p>
 
             <h1

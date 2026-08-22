@@ -55,8 +55,7 @@ export default function Footer() {
 
               <div className="flex flex-col gap-3 text-sm">
                 <a href="/collections">Collections</a>
-                <a href="/">About Us</a>
-                <a href="/">Contact</a>
+
               </div>
             </div>
 

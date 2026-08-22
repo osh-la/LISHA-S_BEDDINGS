@@ -106,7 +106,7 @@ Thank you.`;
               onClick={handleProceed}
               className="w-full bg-red-800 text-white py-3 rounded-md hover:bg-red-500 transition"
             >
-              Proceed
+              Proceed To Order
             </button>
           </div>
         </>

@@ -21,6 +21,8 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import Collection from "./pages/collections";
+import { CartProvider } from "./context/cartProvider";
+import Cart from "./pages/cartPage";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -296,6 +298,7 @@ export default function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="/About" element={<About />} />
+        <Route path="/cart" element={<Cart />} />
         <Route path="/collections" element={<Collection />} />
         <Route path="/collections/:categorySlug" element={<Collection />} />
         <Route path="*" element={<NotFound />} />
@@ -307,11 +310,12 @@ export default function App() {
     <>
       <TransitionProvider>
         <Toaster position="bottom-right" reverseOrder={false} />
-
-        <SectionRefsProvider>
-          <RouterProvider router={router} />
-          <AnimationsController />
-        </SectionRefsProvider>
+        <CartProvider>
+          <SectionRefsProvider>
+            <RouterProvider router={router} />
+            <AnimationsController />
+          </SectionRefsProvider>
+        </CartProvider>
       </TransitionProvider>
     </>
   );

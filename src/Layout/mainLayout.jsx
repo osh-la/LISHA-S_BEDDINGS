@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import Nav from "../components/Nav";
 import Footer from "../components/footer";
 import TransitionOverlay from "../components/transitionoverlay";
-
+import CartModal from "../components/cartModal";
 
 
 export default function MainLayout() {
@@ -25,7 +25,7 @@ export default function MainLayout() {
           <Footer />
         </>
       )}
-
+   {isCartOpen && <CartModal onClose={() => setIsCartOpen(false)} />}
     </>
   );
 }
